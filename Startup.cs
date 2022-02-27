@@ -12,6 +12,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System;
+using WebApi.Interface;
 
 namespace WebApi
 {
@@ -81,6 +82,7 @@ namespace WebApi
 
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICategory, CategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

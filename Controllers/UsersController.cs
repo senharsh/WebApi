@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 using WebApi.Services;
 using WebApi.Entities;
 using WebApi.Models.Users;
+using WebApi.Interface;
 
 namespace WebApi.Controllers
 {
